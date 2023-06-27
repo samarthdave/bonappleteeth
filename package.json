@@ -1,0 +1,22 @@
+{
+  "name": "bonappleteeth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samarthdave/bonappleteeth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samarthdave/bonappleteeth/issues"
+  },
+  "homepage": "https://github.com/samarthdave/bonappleteeth#readme",
+  "dependencies": {
+    "@vercel/node": "^2.15.1"
+  }
+}

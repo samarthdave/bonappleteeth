@@ -1,0 +1,4 @@
+# nodejs ignore file
+node_modules/
+
+.vercel

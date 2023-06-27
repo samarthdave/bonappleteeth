@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Bonappleteeth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        .input-container input[type=text] {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .input-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function openRecipe() {
+            var input = document.getElementById("url-input");
+            var value = input.value;
+
+            // check if checkbox is checked
+            var checkbox = document.getElementById("checkbox");
+            if (checkbox.checked) {
+                value += "&download=true";
+            }
+
+            var url = "/api/main?URL=" + value;
+            window.open(url, "_blank");
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" placeholder="Enter bonappetit URL" id="url-input" />
+        </div>
+        <!-- checkbox with related text -->
+        <div class="input-container">
+            <input type="checkbox" id="checkbox" name="checkbox" value="value">
+            <label for="checkbox">Download page</label>
+        </div>
+        <button type="button" onclick="openRecipe()">engage in piracy... i mean cooking</button>
+    </div>
+</body>
+
+</html>
